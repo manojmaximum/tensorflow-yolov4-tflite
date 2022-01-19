@@ -8,7 +8,12 @@ Download yolov4.weights file: https://drive.google.com/open?id=1cewMfusmPjYWbrnu
 
 
 ### Prerequisites
-* Tensorflow 2.3.0rc0
+* Tensorflow 2.7.0
+* CUDA 11.5
+* CUDNN 8.3.1
+* OpenCV 4.1.2.30
+* GCC 9
+* G++ 9
 
 ### Performance
 <p align="center"><img src="data/performance.png" width="640"\></p>
