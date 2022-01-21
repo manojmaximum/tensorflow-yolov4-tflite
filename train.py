@@ -113,6 +113,14 @@ def main(_argv):
         print("Restoring weights from: %s ... " % FLAGS.weights)
 
     optimizer = tf.keras.optimizers.Adam()
+    # added and commented by Manoj
+    #     learning_rate=tf.Variable(0.001),
+    #     beta_1=tf.Variable(0.9),
+    #     beta_2=tf.Variable(0.999),
+    #     epsilon=tf.Variable(1e-7),
+    # )
+    # optimizer.iterations
+    # optimizer.decay = tf.Variable(0.0)
     if os.path.exists(logdir):
         shutil.rmtree(logdir)
     writer = tf.summary.create_file_writer(logdir)
