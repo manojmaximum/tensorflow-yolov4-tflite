@@ -8,8 +8,8 @@ from absl.flags import FLAGS
 from tensorflow.python.saved_model import tag_constants
 from core import utils
 from core.config import cfg
-from tensorflow.compat.v1 import ConfigProto
-from tensorflow.compat.v1 import InteractiveSession
+from tensorflow._api.v2.compat.v1 import ConfigProto
+from tensorflow._api.v2.compat.v1 import InteractiveSession
 
 flags.DEFINE_boolean("tiny", False, "yolo or yolo-tiny")
 flags.DEFINE_string("framework", "tf", "(tf, tflite, trt")
